@@ -34,7 +34,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>🍲 The Indian Cuisine</h1>
+      <h1>
+        <span role="img" aria-label="emoji">
+          🍲
+        </span>{" "}
+        The Indian Cuisine
+      </h1>
       <small>
         Checkout my list of Indian Cuisine...that might tickle your taste buds!
       </small>
@@ -73,6 +78,7 @@ export default function App() {
                   borderRadius: "0.2rem",
                   width: "80%"
                 }}
+                key={food.name}
               >
                 <div style={{ fontSize: "larger", padding: "0.5rem 1rem" }}>
                   {food.name}
