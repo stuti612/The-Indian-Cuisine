@@ -1,27 +1,6 @@
 import React, { useState } from "react";
+import { foodDataBase } from "./data";
 import "./styles.css";
-
-const foodDataBase = {
-  Bihari: [
-    { name: "Litti Chokha", ratings: "5/5" },
-    { name: "Pittha", ratings: "4.5/5" }
-  ],
-  Gujrati: [
-    { name: "Dhokla", ratings: "4.5/5" },
-    { name: "Khandvi", ratings: "4/5" },
-    { name: "Undhiyu", ratings: "3.5/5" }
-  ],
-  Punjabi: [
-    { name: "Chole-Bhature", ratings: "4.5/5" },
-    { name: "Lassi", ratings: "4/5" },
-    { name: "Butter-Chicken", ratings: "5/5" }
-  ],
-  Malayali: [
-    { name: "Idiyappam", ratings: "4.5/5" },
-    { name: "Puttu and Kadala Curry", ratings: "3/5" },
-    { name: "Thalassery Biryani", ratings: "5/5" }
-  ]
-};
 
 var foodKnown = Object.keys(foodDataBase);
 
